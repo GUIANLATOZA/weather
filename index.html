@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #87CEEB, #f0f8ff);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .weather-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px 30px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .weather-container h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .temperature {
+            font-size: 4rem;
+            color: #FF4500;
+            margin: 20px 0;
+        }
+
+        .details {
+            margin: 20px 0;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather Today</h1>
+        <div class="temperature">25°C</div>
+        <div class="details">
+            <p>Condition: Sunny</p>
+            <p>Humidity: 60%</p>
+            <p>Wind Speed: 15 km/h</p>
+        </div>
+        <div class="footer">
+            <p>Weather data is for display purposes only. <a href="#">Learn more</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
